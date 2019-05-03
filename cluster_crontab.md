@@ -44,16 +44,12 @@ Linux
  ![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/46.png) 
 
 Fat
-    - Creamos otra particion con la tecla n
-    
-    - Pulsaremos la p para indicar particion primaria
-    
-    - Seleccionamos la segunda particion con el 2
-    
-    - Pulsamos intro para que coja automaticamente el sector de inicio
-    
+    - Creamos otra particion con la tecla n    
+    - Pulsaremos la p para indicar particion primaria    
+    - Seleccionamos la segunda particion con el 2    
+    - Pulsamos intro para que coja automaticamente el sector de inicio    
     - Pulsamos intro para que coja lo que queda deL disco
-    
+  
   ![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/47.png)
   
   Para cambiar el tipo de la 2 particion a FAT32 para ello pulsamos ```t```
