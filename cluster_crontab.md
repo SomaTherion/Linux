@@ -64,7 +64,9 @@ Fat
     
 disco B
 Repetimos el proceso anterior, ahora trabajando sobre el disco sdc.
+
     ```sudo fdisk /dev/sdc```
+    
 Crear las siguientes particiones:
 Una vez creada la tabla de particiones crearemos las particiones con la tecla n, igual que en el disco anterior.
 Esta vez añadiremos una partición mas.
@@ -72,21 +74,31 @@ Linux
 Por defecto la partición se crea en este sistema de archivos, por lo que está no será necesario modificarla.
 
 NTFS
-Para cambiar el tipo de la 2 particion a NTFS pulsamos ´´´t´´´
-Seleccionamos la particion ´´´2´´´
-Podemos mostrar todos los tipos de particiones que hay con la tecla ´´´L´´´
-En el caso de escoger NTFS introducimos ´´´7´´´
+Para cambiar el tipo de la 2 particion a NTFS pulsamos 
+´´´t´´´
+Seleccionamos la particion 
+´´´2´´´
+Podemos mostrar todos los tipos de particiones que hay con la tecla 
+´´´L´´´
+En el caso de escoger NTFS introducimos 
+´´´7´´´
 
 Fat
-Seleccionamos la particion ´´´3´´´
-En el caso de escoger fat32 introducimos ´´´b´´´
+Seleccionamos la particion 
+´´´3´´´
+En el caso de escoger fat32 introducimos 
+´´´b´´´
 
-Guardamos y escribimos los datos presionando ´´´w´´´
+Guardamos y escribimos los datos presionando 
+´´´w´´´
 Para completar el formato de la primera particion introducimos:
+
 ´´´sudo mkfs.ext4 /dev/sdc1´´´
 
 Para completar el formato de la segunda particion introducimos:
+
 ´´´sudo mkfs.ntfs /dev/sdc2´´´
 
 Para completar el formato de la tercera particion introducimos:
+
 ´´´sudo mkfs.fat /dev/sdc3´´´
