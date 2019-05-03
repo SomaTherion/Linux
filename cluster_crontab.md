@@ -34,32 +34,34 @@ Accedemos al disco duro que se desa crear la particiones:
 ```sudo fdisk /dev/sdb```
 ![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/44.png)
   Crear las siguientes particiones:
-    creamos la tabla de particiones pulsando la o
+    creamos la tabla de particiones pulsando la ```o```
 Linux   
-    Pulsaremos la p para indicar particion primaria
-    Seleccionamos la primera particion con el 1
-    Pulsamos intro para que coja automaticamente el sector de inicio
-    Introducimos hasta que sector quiere la particion
+    - Pulsaremos la p para indicar particion primaria
+    - Seleccionamos la primera particion con el 1
+    - Pulsamos intro para que coja automaticamente el sector de inicio
+    - Introducimos hasta que sector quiere la particion
+    
  ![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/46.png) 
 
 Fat
-    Creamos otra particion con la tecla n
-    Pulsaremos la p para indicar particion primaria
-    Seleccionamos la segunda particion con el 2
-    Pulsamos intro para que coja automaticamente el sector de inicio
-    Pulsamos intro para que coja lo que queda deL disco
+    - Creamos otra particion con la tecla n
+    - Pulsaremos la p para indicar particion primaria
+    - Seleccionamos la segunda particion con el 2
+    - Pulsamos intro para que coja automaticamente el sector de inicio
+    - Pulsamos intro para que coja lo que queda deL disco
   ![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/47.png)
   
-  Para cambiar el tipo de la 2 particion a FAT32 para ello pulsamos t
+  Para cambiar el tipo de la 2 particion a FAT32 para ello pulsamos ```t```
   Seleccionamos la particion 2
   Podemos listar los tipos de particiones que hay con la tecla L
   ![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/49.png)
-  Para fat32 introducimos b
-  Guardamos y escribimos los datos presionando w
+  
+  Para fat32 introducimos ```b```
+  Guardamos y escribimos los datos presionando ```w```
   Para completar el formato de la primera particion introducimos:
-    ```sudo mkfs.ext4 /dev/sdb1```
+  ```sudo mkfs.ext4 /dev/sdb1```
   Para completar el formato de la segunda particion introducimos:
-    ```sudo mkfs.fat /dev/sdb2```
+  ```sudo mkfs.fat /dev/sdb2```
     ![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/50.png)
     
 disco B
