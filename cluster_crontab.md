@@ -112,3 +112,38 @@ Para completar el formato de la segunda particion introducimos:
 Para completar el formato de la tercera particion introducimos:
 
 ```sudo mkfs.fat /dev/sdc3```
+
+Modificar el fichero fstab, añadiendo todas las particiones. Las del disco A se montarán manualmente. Las del disco B se montarán automáticamente al arrancar.
+
+Editamos el fichero fstab
+![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/51.png) 
+
+Lo configuramos con los valores acordes a nuestros discos duros.
+
+```# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+/dev/mapper/ubuntu--vg-root /               ext4    errors=remount-ro 0       1
+# /boot was on /dev/sda1 during installation
+UUID=c29a4022-e6c4-429c-84e5-243099e9b66f /boot           ext2    defaults        0       2
+/dev/mapper/ubuntu--vg-swap_1 none            swap    sw              0       0
+#Disco 2
+UUID=c3e52e7b-dd1a-45d5-bbef-492582f2cedc       /media/sdb1     ext4    defaults,noauto         0       0
+UUID=9BED-B5F0  /media/sdb2     vfat    defaults,noauto 0       0
+
+#Disco 3
+/dev/sdc1       /media/sdc1     ext4    defaults        0       0
+/dev/sdc2       /media/sdc2     ntfs    defaults        0       0
+/dev/sdc3       /media/sdc3     vfat    defaults        0       0
+
+```
+Para montar automaticamente las particiones podemos reiniciar ```sudo reboot``` o con este comando ```sudo mount -a```.
+
+Para montar manualmente usaremos el siguiente comando ```sudo mount /dev/sdb1 /media/sdb1``` y para la segunda particion sudo mount ```/dev/sdb2 /media/sdb2```.
+
+-- EJERCICIOS CRON --
+
