@@ -29,7 +29,9 @@ A una máquina virtual de linux añadirle dos discos duros:
 Comprobamos la etiqueta de nuestros discos nuevos
 ```fdisk -l```
 ![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/43.png)
-disco A
+
+Disco A
+
 Accedemos al disco duro que se desa crear la particiones:
 ```sudo fdisk /dev/sdb```
 ![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/44.png)
@@ -69,7 +71,8 @@ Fat
   
     ![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/50.png)
     
-disco B
+Disco B
+
 Repetimos el proceso anterior, ahora trabajando sobre el disco sdc.
 
     ```sudo fdisk /dev/sdc```
