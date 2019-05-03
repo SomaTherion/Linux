@@ -75,30 +75,30 @@ Por defecto la partición se crea en este sistema de archivos, por lo que está 
 
 NTFS
 Para cambiar el tipo de la 2 particion a NTFS pulsamos 
-´´´t´´´
+```t```
 Seleccionamos la particion 
-´´´2´´´
+```2```
 Podemos mostrar todos los tipos de particiones que hay con la tecla 
-´´´L´´´
+```L```
 En el caso de escoger NTFS introducimos 
-´´´7´´´
+```7```
 
 Fat
 Seleccionamos la particion 
-´´´3´´´
+```3```
 En el caso de escoger fat32 introducimos 
-´´´b´´´
+```b```
 
 Guardamos y escribimos los datos presionando 
-´´´w´´´
+```w```
 Para completar el formato de la primera particion introducimos:
 
-´´´sudo mkfs.ext4 /dev/sdc1´´´
+```sudo mkfs.ext4 /dev/sdc1```
 
 Para completar el formato de la segunda particion introducimos:
 
-´´´sudo mkfs.ntfs /dev/sdc2´´´
+```sudo mkfs.ntfs /dev/sdc2```
 
 Para completar el formato de la tercera particion introducimos:
 
-´´´sudo mkfs.fat /dev/sdc3´´´
+```sudo mkfs.fat /dev/sdc3```
