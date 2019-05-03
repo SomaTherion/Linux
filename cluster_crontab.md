@@ -32,7 +32,7 @@ Comprobamos la etiqueta de nuestros discos nuevos
 
 Disco A
 
-Accedemos al disco duro que se desa crear la particiones:
+Accedemos al disco duro que se desea crear la particiones:
 ```sudo fdisk /dev/sdb```
 ![Texto alternativo](https://github.com/SomaTherion/Linux/blob/master/44.png)
   Crear las siguientes particiones:
